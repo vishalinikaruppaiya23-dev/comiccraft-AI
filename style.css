@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+.hero-bg {
+  /* Scenic gradient background; drop an image at static/images/hero-background.jpg
+     and uncomment the line below to use a photo instead. */
+  background: linear-gradient(135deg, #2b1055 0%, #7597de 50%, #f6d365 100%);
+  /* background: linear-gradient(rgba(20,20,40,0.55), rgba(20,20,40,0.55)),
+    url("/static/images/hero-background.jpg") center/cover no-repeat fixed; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-bg {
+  background: #f6f4ef;
+  min-height: 100vh;
+}
+
+.overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+form button[type="submit"] {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  background: #ff6b6b;
+  color: white;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 16px 80px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.panel-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.panel-card h2 {
+  margin-top: 0;
+}
+
+.panel-image {
+  width: 100%;
+  max-width: 512px;
+  display: block;
+  margin: 12px auto;
+  border-radius: 10px;
+  border: 4px solid #222;
+}
+
+.scene-description {
+  color: #555;
+}
+
+.caption {
+  color: #777;
+  font-size: 14px;
+}
+
+.narration {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.image-prompt-ref {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.download-area {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download-btn {
+  padding: 14px 28px;
+  background: #2a9d8f;
+  color: white;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.confirm-link {
+  color: #2a9d8f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.success-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+}
+
+.pdf-ref {
+  font-size: 13px;
+  color: #888;
+  word-break: break-all;
+}
+
+.new-comic-btn {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 15px;
+}
